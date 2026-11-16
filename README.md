@@ -7,3 +7,6 @@
 
 ---
 由https://github.com/Theresa-0328/TsdmTask 修改而来
+
+---
+也许是因为网站更新导致https://github.com/Ywjws/TSDM-AutoFarmer虽然能登录但似乎不能签到和打工，把tsdm.py给gpt修改了一下可以正常打工了，签到应该也是可以的
