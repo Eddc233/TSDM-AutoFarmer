@@ -4,7 +4,7 @@ name: TSDM Auto Tasks
 on:
   schedule:
     # 每6小时打工
-    - cron: '23 */6 * * *'
+    - cron: '23 */1 * * *'
     # 每天北京时间09:17签到
     - cron: '17 1 * * *'
 
@@ -34,7 +34,7 @@ jobs:
             if [[ "${{ github.event.schedule }}" == "17 1 * * *" ]]; then
               echo "Running daily check-in"
               python tsdm.py checkin
-            elif [[ "${{ github.event.schedule }}" == "23 */6 * * *" ]]; then
+            elif [[ "${{ github.event.schedule }}" == "23 */1 * * *" ]]; then
               echo "Running 6-hour work"
               python tsdm.py work
             fi
