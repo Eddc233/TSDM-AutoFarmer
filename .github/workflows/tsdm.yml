@@ -35,7 +35,7 @@ jobs:
               echo "Running daily check-in"
               python tsdm.py checkin
             elif [[ "${{ github.event.schedule }}" == "23 */1 * * *" ]]; then
-              echo "Running 6-hour work"
+              echo "Running work check"
               python tsdm.py work
             fi
           else
